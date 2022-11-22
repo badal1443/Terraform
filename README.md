@@ -40,4 +40,6 @@ Applies the changes as per the last command .
 
 destroys the infrascture provisioned based of a state data.
 
-
+** Note: **
+If terraform apply command is not supplied with *.tfplan file , it will print out plan on console and ask for confrirmation, then run it.
+Otherwise it assumes we have validated plan already and just runs the plan and create the infra
