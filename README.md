@@ -28,12 +28,16 @@ resource.name.attr
 ## Terraform workflow to create, update and remove infrastructure:
 
 > Terraform init
+
 (looks for config file, and see if it needs any provider plugin from registry), also creates state backend data ready. Creates state data file in current dir untless specified otherwise.)
-> Terraform plan 
+> Terraform plan [-out <filename.tfplan>]
+
 ( checks config file and compare with current state data and find the diff between two and make a plan to update infrastructure).
-> Terraform apply
+> Terraform apply [<filename.tfplan>]
+
 Applies the changes as per the last command .
 > Terraform destroy ** Use caution
+
 destroys the infrascture provisioned based of a state data.
 
 
