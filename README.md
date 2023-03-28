@@ -113,4 +113,5 @@ create locals.tf file where we can operate on varaible and other values to cre
 Order of precendence
 
 TF_VAR_envvar < .tfvars or tfvars.json <.auto.tfvars or .auto.tfvars.json <-var-file <-var <command prompt supplied value
-  
+
+#### New section  
