@@ -8,11 +8,11 @@ The changes will be idempotent.
 */
 
 resource "local_file" "myfile"{
-    filename="./mycontentfiles/first"
-    content="This is my first file created and maintained by terraform"
+    filename=var.filename
+    content=var.content
 }
 
 resource "local_sensitive_file" "otherfile"{
-    filename="./mycontentfiles/second"
-    content="This is sensitive data, should not be visible"
+    filename=var.sensitive_fileName
+    content=var.sensitive_content
 }
